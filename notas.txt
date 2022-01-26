@@ -1,0 +1,10 @@
+django-admin startproject *nombre del projecto*   # para iniciar un nuevo projecto
+python manage.py runserver #para iniciar el servidor de desarrollo con la configuracion app*.settings
+
+python manage.py startapp *nombre de la app* para iniciar una nueva app
+
+un proyecto en django en un conjunto de apps
+en un proyecto vamos a tener funcionalidades diferenciadas (apps)
+
+En django una aplicacion se refiere a un paquete donde vas a guardar modelos, 
+vistas y demas funcionalidades.
