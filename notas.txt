@@ -8,3 +8,42 @@ en un proyecto vamos a tener funcionalidades diferenciadas (apps)
 
 En django una aplicacion se refiere a un paquete donde vas a guardar modelos, 
 vistas y demas funcionalidades.
+
+ORM
+object relational mapping
+Como con una tecnica de librerias y frameworks puedo replicar la estructura
+de una base de datos relacional con programacion orientada a objetos
+Cada una de las tablas en un archivo de python  se va a llamar modelo o model
+atributos de la clase corresponden a las columnas de la tabla
+
+
+python manage.py shell  # para usar el shell
+
+el uso de __ en consultas de django se usa para poder hacer busquedas especificas
+por atributo ej:
+
+    Question.objects.filter(pub_date__year=timezone.now().year)   #__year
+    Question.objects.filter(question_text__startswith="¿cual")    #__startwith
+
+ver la correspondencia uno a muchos
+
+    q = Question.objects.get(pk=1)
+    q.choice_set.all()          #choice_set es 'choice' por que la clase o  modelo y _set
+        choice tiene la llave foranea de question
+    q.choice_set.create()  # entre el parentesis van los atributos de la clase 
+    q.choice_set.count()
+
+
+python manage.py createsuperuser
+
+username:  sergio    
+
+
+Model Template view
+Django web app
+
+frontend -> Templates
+backend -> View
+
+View - > funcion   Function based views
+    -> clases      Generic views
