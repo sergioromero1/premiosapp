@@ -47,3 +47,6 @@ backend -> View
 
 View - > funcion   Function based views
     -> clases      Generic views
+
+
+    vote{{ choice.votes|pluralize  }}  # para que poonga la s al final.
