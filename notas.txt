@@ -50,3 +50,7 @@ View - > funcion   Function based views
 
 
     vote{{ choice.votes|pluralize  }}  # para que poonga la s al final.
+
+
+tests 
+    #lo mas comun es testear modelos y vistas
