@@ -33,6 +33,8 @@ ver la correspondencia uno a muchos
     q.choice_set.create()  # entre el parentesis van los atributos de la clase 
     q.choice_set.count()
 
+from django.utils import timezone   # para con shell crear datetime
+
 
 python manage.py createsuperuser
 
