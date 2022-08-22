@@ -1,0 +1,22 @@
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    align-items: center;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    background: linear-gradient(
+        to right,
+        hsl(98, 100%, 62%),
+        hsl(204, 100%,  59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
